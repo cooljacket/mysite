@@ -1,0 +1,16 @@
+[自强教程]
+http://www.ziqiangxuetang.com/django/django-intro.html
+
+[New project]
+django-admin.py startproject project-name
+
+[New App]
+python manage.py startapp app-name
+或 django-admin.py startapp app-name
+
+
+[Reg tutorial, must learn because the url uses this]
+http://www.ziqiangxuetang.com/regexp/regexp-tutorial.html
+
+?django修改代码后不需要重启吗？还是默认是debug模式会自动识别来的？
+
