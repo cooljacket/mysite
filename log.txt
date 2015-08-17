@@ -14,3 +14,19 @@ http://www.ziqiangxuetang.com/regexp/regexp-tutorial.html
 
 ?django修改代码后不需要重启吗？还是默认是debug模式会自动识别来的？
 
+[import render]
+from django.shortcuts import render
+
+[dict in template]
+1. 在模板中取字典的键是用点info_dict.site，而不是Python中的 info_dict['site']
+2. for 循环遍历
+{% for key, value in info_dict.items %}
+    {{ key }}: {{ value }}
+{% endfor %}
+
+{% %}: Label, operation
+{{ }}: var
+
+{% %}中用as给变量取别名
+{% url 'some-url-name' arg arg2 as the_url %}
+

@@ -17,8 +17,10 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-	url(r'^$', 'learn.views.index', name='home'),
+	#url(r'^$', 'learn.views.index', name='home'),
 	url(r'^add/$', 'learn.views.cacl', name='add'),
 	url(r'^add/(\d+)/(\d+)/$', 'learn.views.cacl2', name='add2'),
+    url(r'^$', 'learn.views.home', name='home'),
+
     url(r'^admin/', include(admin.site.urls)),
 ]

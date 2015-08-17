@@ -12,3 +12,8 @@ def cacl(request):
 
 def cacl2(request, a, b):
 	return HttpResponse(str(int(a) + int(b)))
+
+def home(request):
+	superStar = "Python"
+	li = ['C++', 'C', 'Java', 'Python', 'PHP', 'LISP'];
+	return render(request, 'home.html', {'superStar': superStar, 'li': li})
